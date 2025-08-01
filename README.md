@@ -1,15 +1,11 @@
 # Actividad #8: Gestión de Inventarios Fullstack
 
-**Repositorio monolítico** con dos carpetas principales:
-
 - **backend/**: API RESTful con Node.js, Express y SQLite.
 - **frontend/**: Aplicación React + Material-UI en TypeScript.
 
-Este proyecto implementa un sistema completo de gestión de inventario que cumple con los requisitos de la Actividad #8 de la Unidad 4 de la asignatura: CRUD de productos, autenticación de usuarios, control de stock, reportes y exportación.
-
 ---
 
-## 📂 Estructura de directorios
+## Estructura de directorios
 
 ```
 ├── backend/
@@ -64,7 +60,7 @@ Este proyecto implementa un sistema completo de gestión de inventario que cumpl
 
 ---
 
-## 🚀 Tecnologías
+## Tecnologías
 
 **Backend**:
 
@@ -85,14 +81,14 @@ Este proyecto implementa un sistema completo de gestión de inventario que cumpl
 
 ---
 
-## 🔧 Prerrequisitos
+## Prerrequisitos
 
 - Node.js ≥ 16.x / npm
 - Git
 
 ---
 
-## ⚙️ Configuración del Backend
+## Configuración del Backend
 
 1. Entra a la carpeta **backend/**:
    ```bash
@@ -119,7 +115,7 @@ El backend quedará escuchando en `http://localhost:3333`.
 
 ---
 
-## 🏃‍♂️ Configuración del Frontend
+## Configuración del Frontend
 
 1. Entra a la carpeta **frontend/**:
    ```bash
@@ -142,7 +138,7 @@ El frontend quedará disponible en `http://localhost:5173` (o el puerto que indi
 
 ---
 
-## 📋 Funcionalidades
+## Funcionalidades
 
 - **CRUD de Productos**: crear, listar, ver, actualizar y eliminar.
 - **Autenticación**: login con usuario fijo (`admin` / `admin`) y protección de rutas.
@@ -153,7 +149,7 @@ El frontend quedará disponible en `http://localhost:5173` (o el puerto que indi
 
 ---
 
-## 📑 Uso
+## Uso
 
 1. Accede a `http://localhost:5173/login` y usa las credenciales:
    - **Usuario**: `admin`
@@ -163,13 +159,8 @@ El frontend quedará disponible en `http://localhost:5173` (o el puerto que indi
 
 ---
 
-## 📝 Contribuir
+## Integrantes
 
-Se aceptan correcciones y mejoras vía pull requests. Por favor, mantén la misma estructura y estilo de código.
-
----
-
-## 📄 Licencia
-
-Este proyecto se entrega como parte de la Actividad #8 de la Unidad 4, sin licencia comercial.
-
+Erika Marisol Chiriapo Macas
+Cristian Xavier Anchapaxi Simbaña
+Tommy Yeslam Lara Tulcanazo
