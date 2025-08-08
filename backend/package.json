@@ -4,7 +4,8 @@
   "main": "app.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc --project ./",
+     "build": "tsc",
+    "postbuild": "cp -R src/data dist/data",
     "start:dev": "nodemon src/server.ts",
     "start:prod": "node dist/server.js",
     "seed": "node src/config/seed.js"

@@ -1,0 +1,22 @@
+version: '3'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "${PORT}:${PORT}"
+    volumes:
+      - ./backend/src:/usr/src/app/src
+    command: npm run start:prod
+    environment:
+      - PORT=${PORT}
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        - VITE_API_URL=http://localhost:${PORT}
+    ports:
+      - "5173:80"           # expone el front en localhost:5173
+    depends_on:
+      - backend
+    restart: unless-stopped

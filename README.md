@@ -149,6 +149,28 @@ El frontend quedará disponible en `http://localhost:5173` (o el puerto que indi
 
 ---
 
+
+## 🐳 Despliegue con Docker Compose (recomendado)
+
+1. Crea un `.env` **en la raíz** (junto a `docker-compose.yml`):
+
+```env
+PORT=3001
+```
+
+> Docker Compose sustituye `${PORT}` desde este archivo.
+
+2. Levanta todo:
+
+```bash
+docker compose down
+docker compose up --build -d
+```
+
+- **Backend (API)**: `http://localhost:${PORT}` → `http://localhost:3001`
+- **Frontend (Nginx)**: `http://localhost:5173`
+
+
 ## Uso
 
 1. Accede a `http://localhost:5173/login` y usa las credenciales:
